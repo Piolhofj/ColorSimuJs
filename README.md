@@ -1,5 +1,3 @@
-![Alt text](./colorsimujs.png)
-
 --------- CUSTOM COLOR CHANGE SIMULATOR IN 3D OBJECTS ---------
 
 --------- Follow these steps to make it work in any case ! ----
@@ -9,26 +7,26 @@
 <link rel="stylesheet" href="ColorSimujs/css/style.css">
 <link rel="preload" as="style" href="ColorSimujs/css/style.css">
 
-<script src="ColorSimujs/core/modernizr/modernizr-2.6.2.min.js"></script><br/>
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.js"></script><br/>
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.touch.js"></script><br/>
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.webgl.js"></script><br/>
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.3ds.js"></script><br/>
+<script src="ColorSimujs/core/modernizr/modernizr-2.6.2.min.js"></script><br/><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.js"></script><br/><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.touch.js"></script><br/><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.webgl.js"></script><br/><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.3ds.js"></script><br/><br/>
 
---------------------------------- ATENTION !! ---------------------------------
+--------------------------------- ATENTION !! ---------------------------------<br/>
 
-- There's an array variable called "modelsArray" that need to be populated with the 3d objects's URL for the object to be rendered into the <canvas> Tag.
+- There's an array variable called "modelsArray" that need to be populated with the 3d objects's URL for the object to be rendered into the <canvas> Tag.<br/>
 - It needs to be populated before calling the main.js file
 
 Ex.
 
-<script>
-    modelsArray = [];
-    document.querySelectorAll('.simulador .owl-carousel img').forEach(function(){
-        modelsArray.push(img.parentElement.dataset.url);
-    });
-</script>
-<script src="ColorSimujs/app/main.js"></script>
+<script><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modelsArray = [];<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.querySelectorAll('.simulador .owl-carousel img').forEach(function(){<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modelsArray.push(img.parentElement.dataset.url);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>
+</script><br/><br/>
+<script src="ColorSimujs/app/main.js"></script><br/><br/>
 
 -------------------------------------------------------------------------------
 
@@ -38,7 +36,7 @@ Ex.
 
     - colorSimulator.update(HexString,colorCode);
 
-    =- Parameters: 
+    - Parameters: 
 
         - HexString - The color to be changed and applied into the Object.
           Default: #FADF60
@@ -61,21 +59,23 @@ Ex.
 
 -------------------------------------------------------------------------------
 
-function custom_mime_types($mime_types) {
-    $mime_types['obj'] = 'text/plain';
-    return $mime_types;
-}
-add_filter('upload_mimes', 'custom_mime_types');
+function custom_mime_types($mime_types) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$mime_types['obj'] = 'text/plain';<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $mime_types;<br/>
+}<br/>
+add_filter('upload_mimes', 'custom_mime_types');<br/>
 
 -------------------------------------------------------------------------------
 
 4. The HTML Structure for the Library is:
 
-<div id="canvas">
-    <div class="colorcode"></div>
-    <canvas id="viewer" width="800" height="575"></canvas>
-    <div class="arrows">
-        <div class="prev"></div>
-        <div class="next"></div>
-    </div>
-</div>
+&lt;div id="canvas"&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="colorcode"&gt;&lt;/div&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;canvas id="viewer" width="800" height="575"&gt;&lt;/canvas&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="arrows"&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="prev"&gt;&lt;/div&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="next"&gt;&lt;/div&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+&lt;/div&gt;<br/><br/><br/>
+
+![Alt text](./colorsimujs.png)
