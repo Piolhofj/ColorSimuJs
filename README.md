@@ -1,3 +1,5 @@
+![Alt text](./colorsimujs.png)
+
 --------- CUSTOM COLOR CHANGE SIMULATOR IN 3D OBJECTS ---------
 
 --------- Follow these steps to make it work in any case ! ----
