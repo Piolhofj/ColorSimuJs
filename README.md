@@ -4,14 +4,14 @@
 
 1. Call all necessary scripts:
 
-● ColorSimujs/css/style.css
+● <link rel="stylesheet" href="ColorSimujs/css/style.css">
+● <link rel="preload" as="style" href="ColorSimujs/css/style.css">
 
-● ColorSimujs/core/modernizr/modernizr-2.6.2.min.js
-● ColorSimujs/vendor/jsc3d/jsc3d.js
-● ColorSimujs/vendor/jsc3d/jsc3d.touch.js
-● ColorSimujs/vendor/jsc3d/jsc3d.webgl.js
-● ColorSimujs/vendor/jsc3d/jsc3d.3ds.js
-● ColorSimujs/app/main.js
+● <script src="ColorSimujs/core/modernizr/modernizr-2.6.2.min.js"></script>
+● <script src="ColorSimujs/vendor/jsc3d/jsc3d.js"></script>
+● <script src="ColorSimujs/vendor/jsc3d/jsc3d.touch.js"></script>
+● <script src="ColorSimujs/vendor/jsc3d/jsc3d.webgl.js"></script>
+● <script src="ColorSimujs/vendor/jsc3d/jsc3d.3ds.js"></script>
 
 --------------------------------- ATENTION !! ---------------------------------
 
@@ -26,7 +26,7 @@ Ex.
         modelsArray.push(img.parentElement.dataset.url);
     });
 </script>
-<script src="<?= get_template_directory_uri() ?>/assets/library/ColorSimujs/app/main.js"></script>
+<script src="ColorSimujs/app/main.js"></script>
 
 -------------------------------------------------------------------------------
 
