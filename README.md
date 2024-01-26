@@ -9,16 +9,16 @@
 <link rel="stylesheet" href="ColorSimujs/css/style.css">
 <link rel="preload" as="style" href="ColorSimujs/css/style.css">
 
-<script src="ColorSimujs/core/modernizr/modernizr-2.6.2.min.js"></script>
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.js"></script>
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.touch.js"></script>
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.webgl.js"></script>
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.3ds.js"></script>
+<script src="ColorSimujs/core/modernizr/modernizr-2.6.2.min.js"></script><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.js"></script><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.touch.js"></script><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.webgl.js"></script><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.3ds.js"></script><br/>
 
 --------------------------------- ATENTION !! ---------------------------------
 
-■ There's an array variable called "modelsArray" that need to be populated with the 3d objects's URL for the object to be rendered into the <canvas> Tag.
-■ It needs to be populated before calling the main.js file
+- There's an array variable called "modelsArray" that need to be populated with the 3d objects's URL for the object to be rendered into the <canvas> Tag.
+- It needs to be populated before calling the main.js file
 
 Ex.
 
@@ -36,9 +36,9 @@ Ex.
 
 - To change the Object's color, use:
 
-    ■ colorSimulator.update(HexString,colorCode);
+    - colorSimulator.update(HexString,colorCode);
 
-    ■ Parameters: 
+    =- Parameters: 
 
         - HexString - The color to be changed and applied into the Object.
           Default: #FADF60
@@ -48,9 +48,9 @@ Ex.
 
 - To change the 3D Model, use:
 
-    ■ viewer.replaceSceneFromUrl(objectUrl);
+    - viewer.replaceSceneFromUrl(objectUrl);
 
-    ■ Parameters:
+    - Parameters:
 
         - objectUrl - The Object URL.
           Default: dove.obj
