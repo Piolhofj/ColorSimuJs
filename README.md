@@ -6,14 +6,14 @@
 
 1. Call all necessary scripts:
 
-■ <link rel="stylesheet" href="ColorSimujs/css/style.css">
-■ <link rel="preload" as="style" href="ColorSimujs/css/style.css">
+<link rel="stylesheet" href="ColorSimujs/css/style.css">
+<link rel="preload" as="style" href="ColorSimujs/css/style.css">
 
-■ <script src="ColorSimujs/core/modernizr/modernizr-2.6.2.min.js"></script>
-■ <script src="ColorSimujs/vendor/jsc3d/jsc3d.js"></script>
-■ <script src="ColorSimujs/vendor/jsc3d/jsc3d.touch.js"></script>
-■ <script src="ColorSimujs/vendor/jsc3d/jsc3d.webgl.js"></script>
-■ <script src="ColorSimujs/vendor/jsc3d/jsc3d.3ds.js"></script>
+<script src="ColorSimujs/core/modernizr/modernizr-2.6.2.min.js"></script>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.js"></script>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.touch.js"></script>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.webgl.js"></script>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.3ds.js"></script>
 
 --------------------------------- ATENTION !! ---------------------------------
 
