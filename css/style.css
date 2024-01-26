@@ -1,0 +1,83 @@
+#canvas{
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    width: 100%;
+    aspect-ratio: 1/.71887;
+    background-color: #8C8C8C;
+    margin-bottom: 10px;
+}
+
+#canvas .prev,
+#canvas .next{
+    position: absolute;
+    display: none;
+    display: -webkit-none;
+    cursor: pointer;
+    width: 29px;
+    height: 52px;
+}
+
+#canvas.c-nav .prev,
+#canvas.c-nav .next{
+    display: block;
+    display: -webkit-block;
+}
+
+#canvas .prev{
+    left: 5%;
+    background: url(../img/arrowprev.svg) no-repeat center;
+}
+
+#canvas .next{
+    right: 5%;
+    background: url(../img/arrownext.svg) no-repeat center;
+}
+
+#canvas::after{
+    content: '';
+    position: absolute;
+    right: 22px;
+    bottom: 1rem;
+    width: 56px;
+    aspect-ratio: 1/1;
+    background: url(../img/rotate.svg) no-repeat center;
+}
+
+#canvas canvas{
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    width: 100%;
+    height: 100%;
+}
+
+#canvas canvas:active{
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: grabbing;
+}
+
+#canvas .colorcode{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    width: 18.61%;
+    aspect-ratio: 1/.82758;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 5px;
+    padding: 1rem;
+}
