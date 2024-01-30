@@ -1,6 +1,6 @@
---------- CUSTOM COLOR CHANGE SIMULATOR IN 3D OBJECTS ---------
+------------------------------ CUSTOM COLOR CHANGE SIMULATOR IN 3D OBJECTS ------------------------------
 
---------- Follow these steps to make it work in any case ! ----
+------------------------------ Follow these steps to make it work in any case ! -------------------------
 
 1. Call all necessary `scripts`:
 ```bash
@@ -10,19 +10,19 @@
 <link rel="preload" as="style" href="ColorSimujs/css/style.css">
 ```
 ```bash
-<script src="ColorSimujs/core/modernizr/modernizr-2.6.2.min.js"></script><br/><br/>
+<script src="ColorSimujs/core/modernizr/modernizr-2.6.2.min.js"></script>
 ```
 ```bash
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.js"></script><br/><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.js"></script>
 ```
 ```bash
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.touch.js"></script><br/><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.touch.js"></script>
 ```
 ```bash
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.webgl.js"></script><br/><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.webgl.js"></script>
 ```
 ```bash
-<script src="ColorSimujs/vendor/jsc3d/jsc3d.3ds.js"></script><br/><br/>
+<script src="ColorSimujs/vendor/jsc3d/jsc3d.3ds.js"></script>
 ```
 
 --------------------------------- ATENTION !! ---------------------------------<br/>
@@ -40,7 +40,7 @@ Ex.
 </script>
 ```
 ```bash
-<script src="ColorSimujs/app/main.js"></script><br/><br/>
+<script src="ColorSimujs/app/main.js"></script>
 ```
 
 -------------------------------------------------------------------------------
@@ -74,7 +74,6 @@ Ex.
 
 3. `Wordpress's Media Library` doesn't allow .obj or .mtl file types for security measures, to enable unallowed file types, add the following code inside the `functions.php` file. That will make the Wordpress's Media Library treat the files as `.txt`
 
--------------------------------------------------------------------------------
 ```bash
 function custom_mime_types($mime_types)
     $mime_types['obj'] = 'text/plain';
