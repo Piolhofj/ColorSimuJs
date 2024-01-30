@@ -32,12 +32,12 @@
 
 Ex.
 ```bash
-<script><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modelsArray = [];<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.querySelectorAll('.simulador .owl-carousel img').forEach(function(){<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modelsArray.push(img.parentElement.dataset.url);<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-</script><br/><br/>
+<script>
+    modelsArray = [];
+    document.querySelectorAll('.simulador .owl-carousel img').forEach(function(){
+        modelsArray.push(img.parentElement.dataset.url);
+    });
+</script>
 ```
 ```bash
 <script src="ColorSimujs/app/main.js"></script><br/><br/>
@@ -76,25 +76,25 @@ Ex.
 
 -------------------------------------------------------------------------------
 ```bash
-function custom_mime_types($mime_types) {<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$mime_types['obj'] = 'text/plain';<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $mime_types;<br/>
-}<br/>
-add_filter('upload_mimes', 'custom_mime_types');<br/>
+function custom_mime_types($mime_types)
+    $mime_types['obj'] = 'text/plain';
+    return $mime_types;
+}
+add_filter('upload_mimes', 'custom_mime_types');
 ```
 
 -------------------------------------------------------------------------------
 
 4. The HTML Structure for the Library is:
 ```bash
-&lt;div id="canvas"&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="colorcode"&gt;&lt;/div&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;canvas id="viewer" width="800" height="575"&gt;&lt;/canvas&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="arrows"&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="prev"&gt;&lt;/div&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="next"&gt;&lt;/div&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-&lt;/div&gt;<br/><br/><br/>
+<div id="canvas">
+    <div class="colorcode"></div>
+    <canvas id="viewer" width="800" height="575"></canvas>
+    <div class="arrows">
+        <div class="prev"></div>
+        <div class="next"></div>
+    </div>
+</div>
 ```
 
 ![Alt text](./colorsimujs.png)
